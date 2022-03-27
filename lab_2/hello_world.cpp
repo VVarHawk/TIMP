@@ -4,6 +4,7 @@
 
 int main()
 {
+    //var name
     std::string name;
     
     //name input

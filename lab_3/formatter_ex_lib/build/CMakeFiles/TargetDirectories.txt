@@ -1,0 +1,3 @@
+/home/danil/GitHub/TIMP/lab_3/formatter_ex_lib/build/CMakeFiles/rebuild_cache.dir
+/home/danil/GitHub/TIMP/lab_3/formatter_ex_lib/build/CMakeFiles/edit_cache.dir
+/home/danil/GitHub/TIMP/lab_3/formatter_ex_lib/build/CMakeFiles/formatter_ex_lib.dir

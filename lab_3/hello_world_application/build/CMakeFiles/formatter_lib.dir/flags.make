@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/danil/GitHub/TIMP/lab_3/hello_world_application/../formatter_lib -I/home/danil/GitHub/TIMP/lab_3/hello_world_application/../formatter_ex_lib 
+CXX_INCLUDES = -I/home/danil/GitHub/TIMP/lab_3/hello_world_application/../formatter_lib 
 

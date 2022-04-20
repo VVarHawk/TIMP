@@ -115,7 +115,7 @@ git push origin main
 
 10. **Проверьте, что история коммитов доступна в удалёный репозитории.**
 
-![[screenshot_1.png]]
+![screenshot_1](./screenshots/screenshot_1.png)
 
 
 
@@ -175,7 +175,7 @@ git push origin patch1
 4. **Проверьте, что ветка `patch1` доступна в удалёный репозитории.**
 
 
-![[screenshot_2.png]]
+![screenshot_2](./screenshots/screenshot_2.png)
 
 
 5. **Создайте pull-request `patch1 -> master`.**
@@ -218,7 +218,7 @@ git push origin patch1
 8. **Проверьте, что новые изменения есть в созданном на **шаге 5_pull-request**
 
 
-![[screenshot_3.png]]
+![screenshot_3](./screenshots/screenshot_3.png)
 
 
 9. **удалённый репозитории выполните  слияние PR `patch1 -> master` и удалите ветку `patch1` в удаленном репозитории.**

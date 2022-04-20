@@ -10,7 +10,7 @@
 
 
 
-1. Создаём директорию `.github/workflows` и добавляем в неё файл `actions.yml`:
+1. Создаём директорию `.github/workflows` и добавляем в неё файл `cmake.yml`:
 
 
 ```yaml

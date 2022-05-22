@@ -11,10 +11,10 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/banking)
 add_executable(test ${CMAKE_CURRENT_SOURCE_DIR}/test/test-account.cpp test-transaction.cpp)
 
 if (COVERAGE)
-    target_compile_options(RunTest PRIVATE --coverage)
-    target_link_libraries(RunTest PRIVATE --coverage)
+    target_compile_options(test PRIVATE --coverage)
+    target_link_libraries(test PRIVATE --coverage)
 endif()
 
-target_include_directories(RunTest PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/banking)
+target_include_directories(test PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/banking)
 
-target_link_libraries(RunTest PRIVATE gtest gtest_main gmock_main banking)
+target_link_libraries(test PRIVATE gtest gtest_main gmock_main banking)

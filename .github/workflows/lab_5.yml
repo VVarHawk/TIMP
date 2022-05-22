@@ -22,8 +22,7 @@ jobs:
       run: | 
         cd lab_5/banking
         mkdir build && cd build
-        CXX = /usr/bin/g++
-        cmake -DCOVERAGE=1 ..
+        CXX = /usr/bin/g++ cmake -DCOVERAGE=1 ..
         cmake --build .
 
     - name: test banking

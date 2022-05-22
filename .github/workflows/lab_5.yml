@@ -23,7 +23,7 @@ jobs:
     - name: build banking
       shell: bash
       run: | 
-        cd banking
+        cd lab_5/banking
         mkdir build && cd build
         CXX : /usr/bin/g++
         cmake -DCOVERAGE=1 ..

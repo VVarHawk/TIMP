@@ -1,0 +1,51 @@
+name: test_banking
+
+env:
+  CXX : /usr/bin/g++
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  banking:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: update
+      run:  |
+        git submodule update --init
+        sudo apt install lcov
+        sudo apt install g++
+
+    - name: build banking
+      shell: bash
+      run: | 
+        cd banking
+        mkdir build && cd build
+        CXX : /usr/bin/g++
+        cmake -DCOVERAGE=1 ..
+        cmake --build .
+
+    - name: test banking
+      run: |
+        ./RunTest
+        lcov -t "banking" -o lcov.info -c -d .
+        lcov --remove lcov.info '/home/runner/work/TIMP/lab_5/third-party/gtest/*' -o lcov.info ###
+        lcov --remove lcov.info '/usr/include/*' -o lcov.info
+        
+    - name: CovBeg
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.github_token }}
+        parallel: true
+        path-to-lcov: ./build/lcov.info
+        coveralls-endpoint: https://coveralls.io
+
+    - name: CovFin
+      uses: coverallsapp/github-action@master
+      with:
+       github-token: ${{ secrets.github_token }}
+       parallel-finished: true

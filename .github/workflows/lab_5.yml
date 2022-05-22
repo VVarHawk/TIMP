@@ -33,7 +33,7 @@ jobs:
       run: |
         ./RunTest
         lcov -t "banking" -o lcov.info -c -d .
-        lcov --remove lcov.info '/home/runner/work/TIMP/lab_5/third-party/gtest/*' -o lcov.info ###
+        lcov --remove lcov.info '/home/runner/work/TIMP/TIMP/lab_5/third-party/GTest/*' -o lcov.info ###
         lcov --remove lcov.info '/usr/include/*' -o lcov.info
         
     - name: CovBeg

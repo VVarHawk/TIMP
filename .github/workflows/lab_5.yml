@@ -28,6 +28,9 @@ jobs:
 
     - name: test banking
       run: |
+        cd lab_5/banking
+        ls -la
+        cd build
         ls -la
         ./RunTest
         lcov -t "banking" -o lcov.info -c -d .

@@ -32,7 +32,7 @@ jobs:
         CXX=/usr/bin/g++ 
         cmake -DCOVERAGE=1 ..
         cmake --build .
-        ./RunTest
+        ./test
         lcov -t "banking" -o lcov.info -c -d .
         lcov --remove lcov.info '/home/runner/work/TIMP/TIMP/lab_5/third-party/GTest/*' -o lcov.info ###
         lcov --remove lcov.info '/usr/include/*' -o lcov.info

@@ -1,8 +1,5 @@
 name: test_banking
 
-env:
-  CXX : /usr/bin/g++
-
 on:
   workflow_dispatch:
 

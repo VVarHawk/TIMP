@@ -3,8 +3,8 @@
 #include <vector>
 #include <algorithm>
 
-//#include "googletest/googletest/include/gtest/gtest.h"
-//#include "googletest/googlemock/include/gmock/gmock.h"
+#include "gtest/gtest.h"
+#include "gmock/gmock.h"
 
 void bubble_sort(std::vector<double> &arr)
 {

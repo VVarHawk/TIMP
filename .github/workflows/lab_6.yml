@@ -26,5 +26,5 @@ jobs:
     - name: Publish
       uses: actions/upload-artifact@v2
       with:
-        name: lab_6/artifact
+        name: artifacts
         path: lab_6/artifacts/

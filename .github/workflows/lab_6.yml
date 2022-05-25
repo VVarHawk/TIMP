@@ -13,12 +13,10 @@ jobs:
     - name: Build
       run: |
         cd lab_6
-        #cmake -H. -B_build -DCPACK_GENERATOR="TGZ"
-        #cmake --build _build --target package
+        
         mkdir _build && cd _build
         cmake .. -DCPACK_GENERATOR="TGZ"
         cmake --build . --target package
-        #cd _build 
         
         cpack -G "DEB"
         cpack -G "RPM"

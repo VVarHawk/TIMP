@@ -15,8 +15,7 @@ jobs:
         cd lab_6
         
         mkdir _build && cd _build
-        #cmake .. -DCPACK_GENERATOR="TGZ"
-        cmake .. -CPACK_GENERATOR="TGZ"
+        cmake .. -DCPACK_GENERATOR="TGZ"
         cmake --build . --target package
         
         cpack -G "DEB"

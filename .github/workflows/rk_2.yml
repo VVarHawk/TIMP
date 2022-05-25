@@ -1,1 +1,24 @@
-#sad
+name: sort_test
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  banking:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: update
+      run:  |
+        git submodule update --init --recursive
+
+    - name: test bubble sort
+      run: |
+        cd rk_2
+        mkdir build && cd build
+        cmake ..
+        cmake --build .
+        ./test

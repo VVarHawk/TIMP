@@ -4,3 +4,6 @@
 [submodule "lab_5/third-party/cov-cmake"]
 	path = lab_5/third-party/cov-cmake
 	url = https://github.com/JoakimSoderberg/coveralls-cmake.git
+[submodule "rk_2/third-party/gtest"]
+	path = rk_2/third-party/gtest
+	url = https://github.com/google/googletest.git

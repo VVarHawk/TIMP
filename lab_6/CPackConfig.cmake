@@ -14,12 +14,11 @@ set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "static C++ library for solving smth idk x
 
 
 set(CPACK_RPM_PACKAGE_NAME "solver_lab")
-#set(CPACK_RPM_PACKAGE_GROUP "solver")
 set(CPACK_RPM_PACKAGE_RELEASE 1)
 
 
 set(CPACK_DEBIAN_PACKAGE_NAME "libsolvert-lab")
-set(CPACK_DEBIAN_PACKAGE_PREDEPENDS "cmake >= 3.0")
+#set(CPACK_DEBIAN_PACKAGE_PREDEPENDS "cmake >= 3.0")
 set(CPACK_DEBIAN_PACKAGE_RELEASE 1)
 
 

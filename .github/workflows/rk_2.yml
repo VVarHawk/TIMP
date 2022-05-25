@@ -5,7 +5,7 @@ on:
 
 
 jobs:
-  banking:
+  bubble_sort_test:
     runs-on: ubuntu-latest
 
     steps:

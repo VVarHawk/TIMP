@@ -15,3 +15,5 @@ project(${PROJECT_NAME})
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/third-party/gtest)
 add_executable(${PROJECT_NAME} ${PROJECT_SRC} ${PROJECT_TEST})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${GTEST_LIB})
+
+include(CPackConfig.cmake)

@@ -11,4 +11,12 @@ jobs:
     - name: hello-world
       run: |
         docker run hello-world
+        mkdir artifacts && cd artifacts
+        wget https://hub.docker.com/_/hello-world
+        
+    - name: Publish
+      uses: actions/upload-artifact@v2
+      with:
+        name: artifacts
+        path: artifacts/
         

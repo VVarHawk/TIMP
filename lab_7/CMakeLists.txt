@@ -5,9 +5,6 @@ HunterGate(
     SHA1 "5659b15dc0884d4b03dbd95710e6a1fa0fc3258d"
 )
 
-
-cmake_minimum_required(VERSION 3.4)
-
 project(lab_6)
 
 set(CMAKE_CXX_STANDART 17)

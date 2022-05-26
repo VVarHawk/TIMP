@@ -12,8 +12,11 @@ set(GTEST_LIB gtest_main gmock_main)
 
 project(${PROJECT_NAME})
 
+add_library(bubble_sort STATIC ${CMAKE_CURRENT_SOURCE_DIR}/src/bubble_sort.cpp)
+
+
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/third-party/gtest)
 add_executable(${PROJECT_NAME} ${PROJECT_SRC} ${PROJECT_TEST})
-target_link_libraries(${PROJECT_NAME} PRIVATE ${GTEST_LIB})
+target_link_libraries(${PROJECT_NAME} PRIVATE ${GTEST_LIB} bubble_sort)
 
 include(CPackConfig.cmake)

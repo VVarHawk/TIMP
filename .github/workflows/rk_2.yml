@@ -22,8 +22,9 @@ jobs:
         cmake ..
         cmake --build .
         ./test
-     - name: Build
-       run: |
+        
+    - name: Build
+      run: |
         cd rk_2
         
         mkdir _build && cd _build

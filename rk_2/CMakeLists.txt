@@ -12,6 +12,7 @@ set(GTEST_LIB gtest_main gmock_main)
 
 project(${PROJECT_NAME})
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 add_library(bubble_sort STATIC ${CMAKE_CURRENT_SOURCE_DIR}/src/bubble_sort.cpp)
 
 

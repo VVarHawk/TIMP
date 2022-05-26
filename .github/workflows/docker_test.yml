@@ -10,4 +10,4 @@ jobs:
     steps:
     - name: hello-world
       run: |
-        docker build -t logger .
+        docker run hello-world

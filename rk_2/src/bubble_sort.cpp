@@ -1,7 +1,4 @@
-#include <iostream>
-#include <functional>
-#include <vector>
-#include <algorithm>
+#include "bubble_sort.h"
 
 void bubble_sort(std::vector<double> &arr)
 {

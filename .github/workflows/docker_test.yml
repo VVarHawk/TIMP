@@ -10,8 +10,9 @@ jobs:
     steps:
     - name: hello-world
       run: |
-        docker run prakhar1989/static-site
+        docker run -d -p 8888:80 prakhar1989/static-site
         mkdir artifacts && cd artifacts
+        wget localhost:8888
         docker save -o ./test.tar prakhar1989/static-site
         
     - name: Publish

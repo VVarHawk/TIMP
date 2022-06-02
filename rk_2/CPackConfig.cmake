@@ -1,7 +1,7 @@
 include(InstallRequiredSystemLibraries)
 
 install(TARGETS bubble_sort)
-install(TARGETS test)
+install(TARGETS bubble_sort_test)
 
 set(CPACK_PACKAGE_CONTACT super@student.bmstu.ru)
 set(CPACK_PACKAGE_VERSION_MAJOR ${PRINT_VERSION_MAJOR})

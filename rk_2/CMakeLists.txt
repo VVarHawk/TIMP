@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.4)
 
 set(CMAKE_CXX_STANDART 17)
 
-set(PROJECT_NAME test)
+set(PROJECT_NAME bubble_sort_test)
 set(PROJECT_SRC)
 set(PROJECT_TEST ${CMAKE_CURRENT_SOURCE_DIR}/test/bubble_sort_test.cpp)
 

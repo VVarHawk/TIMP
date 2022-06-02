@@ -12,7 +12,7 @@ jobs:
       run: |
         docker run hello-world
         mkdir artifacts && cd artifacts
-        wget https://hub.docker.com/_/hello-world
+        docker save -o ./hello-world.tar hello-world
         
     - name: Publish
       uses: actions/upload-artifact@v2

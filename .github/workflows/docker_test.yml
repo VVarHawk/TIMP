@@ -10,9 +10,9 @@ jobs:
     steps:
     - name: hello-world
       run: |
-        docker run hello-world
+        docker run prakhar1989/static-site
         mkdir artifacts && cd artifacts
-        docker save -o ./hello-world.tar hello-world
+        docker save -o ./test.tar prakhar1989/static-site
         
     - name: Publish
       uses: actions/upload-artifact@v2

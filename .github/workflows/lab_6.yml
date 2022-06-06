@@ -18,6 +18,8 @@ jobs:
         cmake .. -DCPACK_GENERATOR="TGZ"
         cmake --build . --target package
         
+        find . -executable | wc -l >> amount.txt
+        
         cpack -G "DEB"
         cpack -G "RPM"
         

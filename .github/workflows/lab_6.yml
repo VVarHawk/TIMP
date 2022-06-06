@@ -15,6 +15,9 @@ jobs:
         cd lab_6
         
         mkdir _build && cd _build
+        
+        "" >> amount.txt
+        
         cmake .. -DCPACK_GENERATOR="TGZ"
         cmake --build . --target package
         
